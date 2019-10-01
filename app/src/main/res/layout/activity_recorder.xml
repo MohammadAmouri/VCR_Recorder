@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#777378"
+    tools:context=".VideoRecorder">
+
+    <VideoView
+        android:id="@+id/video_View"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/buttons_layout"
+        />
+
+<LinearLayout
+    android:id="@+id/buttons_layout"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/recordBtn"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/record_vedio"
+        android:layout_above="@+id/openBtn"
+        android:layout_marginBottom="16dp"
+        />
+
+
+    <TextView
+        android:id="@+id/text_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:layout_marginRight="65dp"
+        android:textColor="#B8BFDE"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/text_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open"
+        android:layout_marginRight  ="15dp"
+        android:textColor="#B8BFDE"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/openBtn"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:background="@drawable/play_video"
+        android:singleLine="true"
+        />
+
+
+
+
+
+</LinearLayout>
+</RelativeLayout>
